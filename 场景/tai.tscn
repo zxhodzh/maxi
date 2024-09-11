@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyreobh4fwpsr"]
+
+[ext_resource type="Texture2D" uid="uid://bueq1dxoibp06" path="res://素材/tile20x4 (15)-export.png" id="1_tc8e3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ne5po"]
+size = Vector2(185, 128)
+
+[node name="Tai" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, -24)
+shape = SubResource("RectangleShape2D_ne5po")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_tc8e3")

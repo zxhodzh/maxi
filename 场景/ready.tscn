@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwm45h3jnoin2"]
+
+[ext_resource type="Script" path="res://脚本/ready.gd" id="1_um67r"]
+
+[node name="Ready" type="Node2D"]
+script = ExtResource("1_um67r")
+
+[node name="Button" type="Button" parent="."]
+process_mode = 3
+offset_left = 103.0
+offset_top = 568.0
+offset_right = 313.0
+offset_bottom = 643.0
+theme_override_font_sizes/font_size = 64
+text = "start"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

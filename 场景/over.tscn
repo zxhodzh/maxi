@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bi811cd8krt1h"]
+
+[ext_resource type="Script" path="res://脚本/over.gd" id="1_2apvf"]
+
+[node name="Over" type="Node2D"]
+script = ExtResource("1_2apvf")
+
+[node name="Button" type="Button" parent="."]
+process_mode = 3
+offset_left = 475.0
+offset_top = 384.0
+offset_right = 655.0
+offset_bottom = 453.0
+theme_override_font_sizes/font_size = 64
+text = "over"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
